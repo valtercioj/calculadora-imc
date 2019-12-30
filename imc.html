@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div id="imc">
+        <table id="tabela">
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obesidade (grau)</th>
+            </tr>
+            <tr>
+                <td>Menor que 18.5</td>
+                <td>Magreza</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entre 18.5 e 24.9</td>
+                <td>Normal</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Entre 25.0 e 29.9</td>
+                <td>Sobrepeso</td>
+                <td>I</td>
+            </tr>
+    
+            <tr>
+                <td>Entre 30.0 e 39.9</td>
+                <td>Obesidade</td>
+                <td>II</td>
+            </tr>
+            <tr>
+                <td>Maior que 40.0</td>
+                <td>Obesidade Grave</td>
+                <td>III</td>
+            </tr>
+        </table>
+        <br><br>
+        <button onclick="calcular()">
+            calcular
+        </button>
+        
+        <br><br>
+    <form id="input-area">
+        <div class="field">
+            <label for="peso">Seu peso</label>
+            <br>
+            <input type="text" name="peso" id="peso" placeholder="peso">
+        </div>
+        <div class="field">
+            <label for="altuta">Sua altura</label>
+            <br>
+            <input type="text" name="altura" id="altura" placeholder="altura">
+        </div>
+    </form>
+    <h1 id="resultado"></h1>
+    </div>
+    <script type="text/javascript" src="calculo.js"></script>
+</body>
+</html>
