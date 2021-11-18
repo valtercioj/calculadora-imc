@@ -2,12 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="imc">
-        <table id="tabela">
+
+
+<table id="tabela">
             <tr>
                 <th>IMC</th>
                 <th>Classificação</th>
@@ -40,26 +43,18 @@
                 <td>III</td>
             </tr>
         </table>
-        <br><br>
-        <button onclick="calcular()">
-            calcular
-        </button>
-        
-        <br><br>
-    <form id="input-area">
-        <div class="field">
-            <label for="peso">Seu peso</label>
-            <br>
-            <input type="text" name="peso" id="peso" placeholder="peso">
-        </div>
-        <div class="field">
-            <label for="altuta">Sua altura</label>
-            <br>
-            <input type="text" name="altura" id="altura" placeholder="altura">
-        </div>
-    </form>
-    <h1 id="resultado"></h1>
-    </div>
-    <script type="text/javascript" src="calculo.js"></script>
+
+<div class="imc">
+  <h1 id="resultado"></h1>
+  <label for="peso">Digite seu peso</label>
+  <input type="number" placeholder="peso" id="peso" name="peso" required="required">
+  <label for="altura">Digite sua Altura</label>
+  <input type="number" placeholder="altura" id="altura" required="required">
+  <button onClick="calcular()">Calcular</button>
+</div>
+       
+  
+  <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
