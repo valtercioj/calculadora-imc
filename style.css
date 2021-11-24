@@ -1,63 +1,62 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: arial;
+}
+
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #0d1117;
+	background-color: #0D1117;
 }
-
-
-table{
-  margin:20px auto;
-  
-}
-th{
-    background-color: white;
-    color: black;
-  
-}
-tr{
-    background-color: white;
-    font-weight:bolder;
-    padding:20px;
-}  
-
 .imc{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15vh;
 }
 
-.imc input{
-  max-width:200px;
-  padding:20px;
-  color:black;
-  text-align:center;
-  font-size:17px;
-  font-weight:bold;
-  border-radius:50px;
+#result{
+	color: #6a5fe2;
+}
+.imc input, label{
+	margin: 15px 0;
 }
 
 label{
-    color: white;
-    text-align:center;
-  margin:30px 0;
-  font-size:20px;
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+}
+
+input{
+	padding: 18px;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 14px;
 }
 
 button{
-  margin:20px 0;
-  background-color:red;
-  width:200px;
- height:60px;
-  color:white;
-  font-size:22px;
-  border-radius:20px;
+	width: 130px;
+	height: 60px;
+	color: white;
+	background-color: crimson;
+	font-size: 18px;
+	font-weight: bolder;
+	border-radius: 17px;
 }
 
 button:hover{
-  background-color:purple;
-  color:yellow;
-  font-weight:bolder;
-  cursor:pointer;
+	background-color: white;
+	color: crimson;
+	cursor: pointer;
 }
 
-h1{color:white;}
+.imc a{
+	margin: 12px 0;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.imc a:hover{
+	color: #35f23e;
+}
